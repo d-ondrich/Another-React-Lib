@@ -1,21 +1,14 @@
 import React from "react";
+import PropTypes from "prop-types";
+import "./Card.css"
 
-export default ({
-  HeaderFontColor,
-  HeaderFontSize,
-  HeaderFontFamily,
-  Header,
-  subHeaderFontColor,
-  subHeaderFontSize,
-  subHeaderFontFamily,
-  subHeader,
-  dateFontColor,
-  dateFontSize,
-  dateFontFamily,
-  tags,
-  showTags = false,
+const Card = ({
+  header,
+  subheader,
   date,
-  showDate = false,
+  tags,
+  showTags,
+  showDate,
   backgroundImage,
   borderColor,
   borderWidth,
@@ -39,39 +32,39 @@ export default ({
           <div>
             <h1
               style={{
-                color: HeaderFontColor,
-                fontSize: HeaderFontSize,
-                fontFamily: HeaderFontFamily
+                color: header.fontColor,
+                fontSize: header.fontSize,
+                fontFamily: header.fontFamily
               }}
             >
-              {Header}
+              {header.title}
             </h1>
             <p
               style={{
-                color: subHeaderFontColor,
-                fontSize: subHeaderFontSize,
-                fontFamily: subHeaderFontFamily
+                color: subheader.fontColor,
+                fontSize: subheader.fontSize,
+                fontFamily: subheader.fontFamily
               }}
             >
-              {subHeader}
+              {subheader.title}
             </p>
             {showDate && (
               <div
                 className='date'
                 style={{
-                  color: dateFontColor,
-                  fontSize: dateFontSize,
-                  fontFamily: dateFontFamily
+                  color: date.fontColor,
+                  fontSize: date.fontSize,
+                  fontFamily: date.fontFamily
                 }}
               >
-                {date}
+                {date.text}
               </div>
             )}
             <div className='tags'>
               {showTags &&
                 tags.map((tag, index) => (
                   <div className='tag' key={index}>
-                    {tag}
+                    {tag.name}
                   </div>
                 ))}
             </div>
@@ -81,3 +74,43 @@ export default ({
     </div>
   );
 };
+
+Card.defaultProps = {
+  showTags: false,
+  showDate: false,
+  onClick: () => {}
+}
+
+Card.propTypes = {
+  header: PropTypes.shape({
+    fontColor: PropTypes.string,
+    fontSize: PropTypes.string,
+    fontFamily: PropTypes.string,
+    title: PropTypes.string,
+  }),
+  subheader: PropTypes.shape({
+    fontColor: PropTypes.string,
+    fontSize: PropTypes.string,
+    fontFamily: PropTypes.string,
+    title: PropTypes.string,
+  }),
+  date: PropTypes.shape({
+    fontColor: PropTypes.string,
+    fontSize: PropTypes.string,
+    fontFamily: PropTypes.string,
+    text: PropTypes.string,
+  }),
+  showDate: PropTypes.bool,
+  showTags: PropTypes.bool,
+  tags: PropTypes.arrayOf({
+    name: PropTypes.string,
+  }),
+  onClick: PropTypes.func,
+  backgroundImage: PropTypes.string,
+  borderColor: PropTypes.string,
+  borderWidth: PropTypes.string,
+  borderRadius: PropTypes.string,
+}
+
+
+export default Card;
