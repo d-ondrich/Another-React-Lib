@@ -5,6 +5,7 @@ import {
   AlertWrapper,
   Avatar,
   Button,
+  BeatingHeart
 } from "../../src/index";
 
 

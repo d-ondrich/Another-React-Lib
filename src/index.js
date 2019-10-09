@@ -32,6 +32,7 @@ import DeleteButton from "./DeleteButton/DeleteButton";
 import Reaction from "./Reaction/Reaction";
 import AlertWrapper from "./AlertWrapper/AlertWrapper";
 import Card from "./Card/Card";
+import BeatingHeart from "./BeatingHeart/BeatingHeart";
 
 export {
   LoadingButton,
@@ -68,5 +69,6 @@ export {
   Navbar,
   NavItems,
   AlertWrapper,
-  Card
+  Card,
+  BeatingHeart
 };
