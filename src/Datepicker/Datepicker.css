@@ -1,4 +1,4 @@
-.datepicker {
+#datepicker {
     margin-left: 10px;
     border: 2px solid #0A5373;
     color: #09213E;
@@ -7,9 +7,10 @@
     padding: 5px;
     text-align: center;
     position: relative;
+    max-width: 150px;
 }
 
-.datepicker:after {
+#datepicker:after {
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
     content: "\f073";
@@ -18,7 +19,7 @@
     font-size: 15px;
 }
 
-.datepicker::-webkit-calendar-picker-indicator {
+#datepicker::-webkit-calendar-picker-indicator {
     position: absolute;
     right: 8px;
     width: 8px;
@@ -27,6 +28,24 @@
     background: transparent;
 }
 
-.datepicker::-webkit-inner-spin-button {
+#datepicker::-webkit-inner-spin-button {
     display: none;
+}
+
+.datepicker-component-left {
+  display: flex;
+}
+
+.datepicker-component-right {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.datepicker-component-top {
+  display: flex;
+  flex-direction: column;
+}
+
+.datepicker-label {
+  margin-left: 10px;
 }
