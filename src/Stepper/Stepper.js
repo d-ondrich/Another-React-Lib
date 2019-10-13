@@ -27,7 +27,7 @@ Stepper.defaultProps = {
 };
 
 Stepper.propTypes = {
-  steps: PropTypes.oneOf(1, 2, 3, 4, 5),
+  steps: PropTypes.oneOf([1, 2, 3, 4, 5]),
   currentStep: PropTypes.number,
 };
 
