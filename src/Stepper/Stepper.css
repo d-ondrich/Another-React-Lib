@@ -1,6 +1,6 @@
 .stepper-container {
   display: flex;
-  width: 500px;
+  min-width: 100px;
 }
 
 .step-container {

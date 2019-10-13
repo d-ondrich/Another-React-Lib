@@ -5,7 +5,6 @@ import {
   AlertWrapper,
   Avatar,
   Button,
-  Stepper,
 } from "../../src/index";
 
 
@@ -29,8 +28,6 @@ class Demo extends Component {
         <h4>Button</h4>
         <Button />
 
-        <h4>Stepper</h4>
-        <Stepper steps={3} currentStep={1}/>
 
       </div>
     );
