@@ -1,26 +1,26 @@
 import React from "react";
-
+import PropTypes from "prop-types";
 import "./BeatingHeart.css";
 import "@fortawesome/fontawesome-free/css/all.css";
 
-class BeatingHeart extends React.Component {
-  setHeartSize(size) {
-    const heart = document.getElementById("beating-heart")
-    heart.style.fontSize = size + 'rem'
-  }
+const BeatingHeart = props => {
+  let { size } = props;
 
-  render() {
-    return (
-      <div className="beating-heart-component">
-        <div className="select-size">
-          <div className="size" onClick={() => this.setHeartSize(1)}>Small</div>
-          <div className="size" onClick={() => this.setHeartSize(2)}>Medium</div>
-          <div className="size" onClick={() => this.setHeartSize(3)}>Large</div>
-        </div>
-        <i className="fas fa-heart" id="beating-heart"></i>
+  return (
+    <div className="beating-heart-component">
+      <div className="beating-heart-container">
+        <i className={`fas fa-heart ${size}`} id="beating-heart"></i>
       </div>
-    )
-  }
-}
+    </div>
+  );
+};
+
+BeatingHeart.defaultProps = {
+  size: "md"
+};
+
+BeatingHeart.propTypes = {
+  size: PropTypes.string
+};
 
 export default BeatingHeart;

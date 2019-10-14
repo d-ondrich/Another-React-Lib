@@ -18,6 +18,18 @@
     color: red;
 }
 
+#beating-heart.sm {
+    font-size: 1rem;
+}
+
+#beating-heart.md {
+     font-size: 2rem;
+}
+
+#beating-heart.lg {
+    font-size: 3rem;
+}
+
 @keyframes beatHeart {
     0% {
         transform: scale(1);
