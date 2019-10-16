@@ -22,7 +22,7 @@ import Switch from "./Switch/Switch";
 import Notification from "./Notification/Notification";
 import ExtendedText from "./ExtendedText/ExtendedText";
 import List from "./List/List";
-
+import Stepper from "./Stepper/Stepper";
 import Spinner from "./Spinner/Spinner"
 import Checkbox from "./Checkbox/Checkbox";
 import StickyButton from "./StickyButton/StickyButton";
@@ -68,5 +68,6 @@ export {
   Navbar,
   NavItems,
   AlertWrapper,
-  Card
+  Card,
+  Stepper,
 };

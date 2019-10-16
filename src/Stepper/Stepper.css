@@ -1,0 +1,36 @@
+.stepper-container {
+  display: flex;
+  min-width: 100px;
+}
+
+.step-container {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+.separator {
+  height: 1px;
+  border: 1px solid powderblue;
+  width: 100%;
+}
+
+.separator.complete {
+  border-color: blue
+}
+
+.step-number {
+  min-height: 25px;
+  min-width: 25px;
+  border-radius: 10px;
+  background-color: powderblue;
+  border: 1px solid powderblue;
+  color: white;
+  text-align: center;
+  margin: 0 5px;
+}
+
+.step-number.complete {
+  background-color: blue;
+  border-color: blue;
+}
