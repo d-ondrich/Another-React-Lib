@@ -1,0 +1,49 @@
+.beating-heart-component {
+    display: flex;
+    align-items: center;
+}
+
+.select-size {
+    margin-right: 50px;
+}
+
+.size:hover {
+    cursor: pointer;
+    color: red;
+}
+
+#beating-heart {
+    font-size: 1rem;
+    animation: .8s infinite beatHeart;
+    color: red;
+}
+
+#beating-heart.sm {
+    font-size: 1rem;
+}
+
+#beating-heart.md {
+     font-size: 2rem;
+}
+
+#beating-heart.lg {
+    font-size: 3rem;
+}
+
+@keyframes beatHeart {
+    0% {
+        transform: scale(1);
+    }
+    25% {
+        transform: scale(1.1);
+    }
+    40% {
+        transform: scale(1);
+    }
+    60% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
