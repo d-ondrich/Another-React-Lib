@@ -19,7 +19,7 @@ class Demo extends Component {
         </h2>
 
         <h3>Example components</h3>
-        
+
         <h4>Alert Wrapper</h4>
         <AlertWrapper alertMsg="Example alert message"/>
 
