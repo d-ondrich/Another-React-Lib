@@ -21,7 +21,6 @@ import Switch from "./Switch/Switch";
 import Notification from "./Notification/Notification";
 import ExtendedText from "./ExtendedText/ExtendedText";
 import List from "./List/List";
-import Spinner from "./Spinner/Spinner";
 import Stepper from "./Stepper/Stepper";
 import Spinner from "./Spinner/Spinner"
 import Checkbox from "./Checkbox/Checkbox";
