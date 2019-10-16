@@ -32,6 +32,7 @@ import DeleteButton from "./DeleteButton/DeleteButton";
 import Reaction from "./Reaction/Reaction";
 import AlertWrapper from "./AlertWrapper/AlertWrapper";
 import Card from "./Card/Card";
+import BeatingHeart from "./BeatingHeart/BeatingHeart";
 import Carousel from "./Carousel/Carousel";
 
 export {
@@ -70,6 +71,7 @@ export {
   NavItems,
   AlertWrapper,
   Card,
+  BeatingHeart,
   Carousel,
   Stepper,
 };
