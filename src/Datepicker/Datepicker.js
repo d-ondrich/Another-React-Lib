@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 import "./Datepicker.css";
 import "@fortawesome/fontawesome-free/css/all.css";
